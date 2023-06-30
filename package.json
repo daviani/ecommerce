@@ -1,0 +1,13 @@
+{
+  "name": "webapp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "scripts": {
+    "install": "concurrently \"npm:install:server\" \"npm:install:webapp\"",
+    "install:server" : "(cd ./server && npm install)",
+    "install:webapp" : "(cd ./webapp && npm install)"
+  }
+}
