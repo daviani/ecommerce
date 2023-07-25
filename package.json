@@ -6,8 +6,8 @@
     "concurrently": "^8.2.0"
   },
   "scripts": {
-    "install": "concurrently \"npm:install:server\" \"npm:install:webapp\"",
-    "install:server" : "(cd ./server && npm install)",
+    "install": "concurrently \"npm:install:api\" \"npm:install:webapp\"",
+    "install:api" : "(cd ./api && npm install)",
     "install:webapp" : "(cd ./webapp && npm install)"
   }
 }
